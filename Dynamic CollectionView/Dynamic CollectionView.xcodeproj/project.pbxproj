@@ -13,7 +13,8 @@
 		E96C38F827A0131200B197F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96C38F627A0131200B197F3 /* Main.storyboard */; };
 		E96C38FA27A0131300B197F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E96C38F927A0131300B197F3 /* Assets.xcassets */; };
 		E96C38FD27A0131300B197F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96C38FB27A0131300B197F3 /* LaunchScreen.storyboard */; };
-		E9DED96727A115EA00D4766D /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DED96627A115EA00D4766D /* TagCollectionViewCell.swift */; };
+		E9DED96C27A126DC00D4766D /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DED96A27A126DC00D4766D /* TagCollectionViewCell.swift */; };
+		E9DED96D27A126DC00D4766D /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9DED96B27A126DC00D4766D /* TagCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,8 @@
 		E96C38F927A0131300B197F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E96C38FC27A0131300B197F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E96C38FE27A0131300B197F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9DED96627A115EA00D4766D /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
+		E9DED96A27A126DC00D4766D /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
+		E9DED96B27A126DC00D4766D /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,8 @@
 				E96C390427A0131900B197F3 /* AppDelegate */,
 				E96C390527A0131F00B197F3 /* Resources */,
 				E96C38F427A0131200B197F3 /* ViewController.swift */,
-				E9DED96627A115EA00D4766D /* TagCollectionViewCell.swift */,
+				E9DED96A27A126DC00D4766D /* TagCollectionViewCell.swift */,
+				E9DED96B27A126DC00D4766D /* TagCollectionViewCell.xib */,
 			);
 			path = "Dynamic CollectionView";
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E96C38FD27A0131300B197F3 /* LaunchScreen.storyboard in Resources */,
+				E9DED96D27A126DC00D4766D /* TagCollectionViewCell.xib in Resources */,
 				E96C38FA27A0131300B197F3 /* Assets.xcassets in Resources */,
 				E96C38F827A0131200B197F3 /* Main.storyboard in Resources */,
 			);
@@ -158,7 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E96C38F527A0131200B197F3 /* ViewController.swift in Sources */,
-				E9DED96727A115EA00D4766D /* TagCollectionViewCell.swift in Sources */,
+				E9DED96C27A126DC00D4766D /* TagCollectionViewCell.swift in Sources */,
 				E96C38F127A0131200B197F3 /* AppDelegate.swift in Sources */,
 				E96C38F327A0131200B197F3 /* SceneDelegate.swift in Sources */,
 			);

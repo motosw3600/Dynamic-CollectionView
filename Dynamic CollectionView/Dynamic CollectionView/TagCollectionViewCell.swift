@@ -9,42 +9,34 @@ import UIKit
 
 class TagCollectionViewCell: UICollectionViewCell {
     
-    private let tagLabel = UILabel()
+    static let identifier = "TagCollectionViewCell"
+    @IBOutlet weak var tagLabel: UILabel!
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.configureLayout()
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.configureView()
     }
     
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-    }
-    
-    private func configureLayout() {
-        self.layer.cornerRadius = frame.height / 2
+    private func configureView() {
         self.backgroundColor = .lightGray
-        self.addSubview(tagLabel)
-        tagLabel.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            tagLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
-            tagLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
-            tagLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 10),
-            tagLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 10)
-        ])
     }
     
-    private func configure(text: String) {
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.layer.cornerRadius = frame.height / 2
+    }
+    
+    func configure(text: String) {
         self.tagLabel.text = text
     }
     
     // return adjusted cell Size
-    static func adjustCellSize(height: CGFloat, label: String) -> CGSize {
-        let cell = TagCollectionViewCell()
-        cell.configure(text: label)
-        
+    func adjustCellSize(height: CGFloat, label: String) -> CGSize {
+        self.tagLabel.text = label
         let targetSize = CGSize(width: UIView.layoutFittingCompressedSize.width, height: height)
-        return cell.contentView.systemLayoutSizeFitting(targetSize,
+        return self.contentView.systemLayoutSizeFitting(targetSize,
                                                         withHorizontalFittingPriority: .fittingSizeLevel,
                                                         verticalFittingPriority: .required)
     }
+
 }
